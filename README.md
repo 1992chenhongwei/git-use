@@ -50,3 +50,13 @@ git commit -m "注释语句"
 git push -u origin master
 # 首次提交文件到远程版本库
 ```
+## 拉取过程
+
+``` bash
+git pull origin master
+# 从远程拉取最新版本到本地，且自动合并merge
+git fetch  origin master
+# 从远程获取最新版本到本地，不会自动合并merge
+git merge orgin/master
+# 合并获取到的最新代码
+```
