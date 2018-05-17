@@ -48,5 +48,5 @@ git add .
 git commit -m "注释语句"
 # 将add的文件commit到仓库
 git push -u origin master
-# 提交文件到远程版本库
+# 首次提交文件到远程版本库
 ```
