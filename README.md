@@ -60,3 +60,11 @@ git fetch  origin master
 git merge orgin/master
 # 合并获取到的最新代码
 ```
+## 创建新分支并提交
+
+``` bash
+git checkout -b 'branch1'
+# 创建新的分支并切换到branch1
+git push -u origin branch1
+# 首次提交分支branch1
+```
