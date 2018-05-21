@@ -68,3 +68,23 @@ git checkout -b 'branch1'
 git push -u origin branch1
 # 首次提交分支branch1
 ```
+## 合并分支到主分支
+
+``` bash
+# 进入要合并的分支拉取最新代码（如开发分支合并到master，则进入master目录）
+git pull
+# 查看所有分支是否都pull下来了
+git branch -a
+# 使用merge合并开发分支
+git merge 分支名
+# 查看合并之后的状态
+git status 
+# 有冲突的话，通过IDE解决冲突；
+# 解决冲突之后，将冲突文件提交暂存区
+git add 冲突文件
+# 提交merge之后的结果
+git commit 
+# 如果不是使用git commit -m "备注" ，那么git会自动将合并的结果作为备注，提交本地仓库；
+# 本地仓库代码提交远程仓库
+git push
+```
